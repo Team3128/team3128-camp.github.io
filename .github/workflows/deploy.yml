@@ -29,7 +29,7 @@ jobs:
       run: |
         ssh team3128@cp.team3128.org << 'EOF'
         if [ ! -d "${{ env.DEPLOY_DIR }}/.git" ]; then
-          git clone git@github.com:Team3128/team3128.github.io.git ${{ env.DEPLOY_DIR }}/
+          git clone git@github.com:Team3128/team3128-camp.github.io.git ${{ env.DEPLOY_DIR }}/
         else
           git config --global --add safe.directory ${{ env.DEPLOY_DIR }}
           cd ${{ env.DEPLOY_DIR }}/
