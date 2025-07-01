@@ -27,7 +27,7 @@ jobs:
 
     - name: Deploy to VPS
       run: |
-        ssh team3128@cp.team3128.org << 'EOF'
+        ssh team3128-camp@camp.team3128.org << 'EOF'
         if [ ! -d "${{ env.DEPLOY_DIR }}/.git" ]; then
           git clone git@github.com:Team3128/team3128-camp.github.io.git ${{ env.DEPLOY_DIR }}/
         else
