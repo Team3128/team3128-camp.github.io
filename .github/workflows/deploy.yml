@@ -6,7 +6,7 @@ on:
       - master
 
 env:
-  DEPLOY_DIR: /home/team3128/htdocs/team3128.org
+  DEPLOY_DIR: /home/team3128-camp/htdocs/camp.team3128.org
 
 jobs:
   deploy:
@@ -36,6 +36,5 @@ jobs:
           git pull origin master
         fi
         # Add any additional commands to build or restart services
-        #TODO: Add Ruby build for github.io replacement
-        bundle exec jekyll build
+        
         EOF
