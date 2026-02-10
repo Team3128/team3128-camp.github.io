@@ -33,20 +33,22 @@ layout: default
                     <!-- <br/> -->
                     <!-- Registration for 2025 Camp is Open!  Please see <a style="color: lightyellow;" href="programs">Programs</a> for more info! -->
                     <!-- Registration for 2025 camp is expected to open in late February/early March. -->
-                    Registration for our 2025 camp is full! Please check back next year.
+                    We hope to open registration for our 2026 camp in early March.
                     <br/>
                     <br/>
-                    Our dates for summer camp 2025 are:<br>
-                    Week 1: July 14-18<br>
-                    Week 2: July 21-25<br>
-                    Week 3: July 28-Aug 1<br>
-                
+                    Our anticipated dates for summer camp 2026 are:<br>
+                    <ul>
+                        {% for week in site.data.weeks %}
+                            <li> <b>{{ week.name }}:</b> {{ week.start_date }} – {{ week.end_date }}</li>
+                        {% endfor %}
+                    </ul>
+
                 </div>
                 <div class="details">
-                    
+
                     <br>
-                    Robotics Summer Camp at Canyon Crest Academy is the ultimate week-long summer STEM experience for elementary and middle school students. 
-               
+                    Robotics Summer Camp at Canyon Crest Academy is the ultimate week-long summer STEM experience for elementary and middle school students.
+
                 <!--
                 Thanks for a great Summer 2019! Camp is returning this July, from the 13th to 31st.
                 -->
@@ -60,7 +62,7 @@ layout: default
             </div>
         </div>
     </div>
-    
+
     <div class="why" id="whycamp">
         <div class="wrapper block">
             <h1 class="short">What Happens At Camp?</h1>
@@ -68,7 +70,7 @@ layout: default
             <div>
                 At Robotics Summer Camp at Canyon Crest Academy, students start on a journey that can continue for the rest of their lives—and it goes way further than just technical know-how. Campers develop skills in teamwork, collaboration, planning, and creative problem solving, as well as friendships and memories that last a lifetime.
             </div>
-            
+
             <div style="margin: 4px 0px 0px; text-align: center;">
                 <i>Hover over the pictures below to learn more about what makes our camp unique.</i>
             </div>
@@ -86,7 +88,7 @@ layout: default
                                         <i>Click to learn more...</i>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </a>
@@ -104,11 +106,11 @@ layout: default
         <div class="wrapper block">
             <h1>Programs</h1>
             <hr>
-            
+
             {% include levels.html %}
         </div>
     </div>
-    
+
     <div class="questions">
         <div class="wrapper block">
             <h1 class="short">Join us!</h1>
