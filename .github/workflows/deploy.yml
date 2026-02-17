@@ -22,7 +22,7 @@ jobs:
         ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
     - name: Add VPS to know hosts
-      run: ssh-keyscan -H cp.team691.org >> ~/.ssh/known_hosts
+      run: ssh-keyscan -H camp.team691.org >> ~/.ssh/known_hosts
 
 
     - name: Deploy to VPS
@@ -36,6 +36,7 @@ jobs:
           git pull origin master
         fi
         # Add any additional commands to build or restart services
+        
         bundle exec jekyll build --destination /home/team3128-camp/htdocs/camp.team3128.org/_site/camp
         bundle install
         EOF
