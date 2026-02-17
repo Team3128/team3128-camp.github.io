@@ -37,5 +37,5 @@ jobs:
         fi
         # Add any additional commands to build or restart services
         bundle exec jekyll build --destination /home/team3128-camp/htdocs/camp.team3128.org/_site/camp
-        
+        bundle install
         EOF
