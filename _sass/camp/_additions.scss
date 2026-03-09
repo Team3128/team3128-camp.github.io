@@ -87,6 +87,11 @@
                 font-size: 38px;
                 line-height: 42px;
             }
+            .no-bullets {
+                list-style-type: none;
+                padding: 0; 
+                margin: 0;
+            }
         }
     }
 
