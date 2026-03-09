@@ -448,3 +448,9 @@ hr {
 
     padding: 24px;
 }
+.no-bullets {
+      list-style-type: none;
+      /* You may also want to remove default padding/margin */
+      padding: 0; 
+      margin: 0;
+    }
