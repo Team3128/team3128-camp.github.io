@@ -14,8 +14,8 @@ plugins:
 whitelist:
   - jekyll-redirect-from
 
-date_range: "July 14 - August 1"
-registration_open: 'no'
+date_range: "July 13 - July 31"
+registration_open: 'yes'
 
 # (2019) Camp Interest Form Link
 interest_link: "https://team3128.us17.list-manage.com/subscribe?u=7c13b1f47db9b4f3392eda9f2&id=34f1dbd104"
